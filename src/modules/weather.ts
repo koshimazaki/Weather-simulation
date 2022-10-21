@@ -93,10 +93,11 @@ function getWeather(weather: CurrentWeather) {
   } else {
     executeTask(async () => {
       try {
-        log('getting new weather')
+        log('getting new temp in Paris')  /// mod 
         const response = await fetch(callUrl)
         const json = await response.json()
-        newWeather = mapWeather(json.wx_desc)
+        log('Temp in Paris now:')
+        newWeather = mapWeather(json.temp_c) // json.temp_c
         setWeather(weather, newWeather)
       } catch {
         log('failed to reach URL', error)
@@ -104,6 +105,9 @@ function getWeather(weather: CurrentWeather) {
     }).catch((error) => log(error))
   }
 }
+
+
+
 
 // map verbose API responses to distinct possible values
 function mapWeather(weather: string) {

@@ -11,13 +11,17 @@ export const fakeWeather: string | null = null
 
 // LATITUDE AND LONGITUDE OF WEATHER CONDITIONS
 
-const lat: string = '37'
-const lon: string = '5'
+// Paris 
+
+const lat: string = '48.85'
+const lon: string = '2.294'
 
 // WEATHER API ID & KEY
 
-const appId: string = 'bb6063b3'
-const APIkey: string = '2e55a43d3e62d76f145f28aa7e3990e9'
+// Glitch Candies codes
+
+const appId: string = 'd9fa6d29'
+const APIkey: string = '08606abfacba057a4ac5234f1f754ff4'
 
 // FALLING SPEED OF RAIN AND SNOW
 
